@@ -47,9 +47,9 @@ export function MainNav({
           <NavigationMenuItem>
             <NavigationMenuTrigger
               aria-label="Open blog links"
-              className="flex h-7 items-center rounded-full bg-transparent px-3 py-4 hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50"
+              className="flex h-7 cursor-pointer items-center rounded-full bg-transparent px-3 py-4 hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50"
             >
-              More
+              <Link href="/all">All models</Link>
             </NavigationMenuTrigger>
             <NavigationMenuContent className="bg-background">
               <ul className="grid w-[500px] grid-cols-2 gap-6 p-4 lg:w-[600px]">

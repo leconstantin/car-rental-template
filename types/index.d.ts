@@ -150,3 +150,23 @@ export type TStaff = {
     slug: string;
   }[];
 };
+
+export type Tservices = {
+  label: string;
+  link: string;
+  icon: ForwardRefExoticComponent<
+    Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>
+  >;
+};
+
+export type Tcar = {
+  title: string;
+  slug: string;
+  imageWhite: string;
+  imageBlack: string;
+  category: string;
+  price: {
+    inRwf: string;
+    inUsd: string;
+  };
+};

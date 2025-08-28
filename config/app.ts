@@ -1,5 +1,8 @@
 import {
+  BikeIcon,
   Briefcase,
+  BusIcon,
+  CarIcon,
   ChartNoAxesColumnDecreasingIcon,
   Clapperboard,
   ClapperboardIcon,
@@ -24,13 +27,22 @@ import {
   NotebookPenIcon,
   Palette,
   Plane,
+  PlaneIcon,
   ShieldAlert,
   Smile,
   Trophy,
+  TruckIcon,
   UsersIcon,
 } from "lucide-react";
 import { FaEarthAfrica, FaEarthAmericas, FaEarthEurope } from "react-icons/fa6";
-import type { TFooterLink, TNavItem, TNewsCategory, TNewsLink } from "@/types";
+import type {
+  Tcar,
+  TFooterLink,
+  TNavItem,
+  TNewsCategory,
+  TNewsLink,
+  Tservices,
+} from "@/types";
 
 export const topTextMessages = [
   {
@@ -256,4 +268,104 @@ export const newsCategories: TNewsCategory[] = [
   { name: "Crime", link: "/", icon: ShieldAlert },
   { name: "Opinion", link: "/", icon: MessageCircleQuestion },
   { name: "Culture", link: "/", icon: Palette },
+];
+
+export const services: Tservices[] = [
+  {
+    label: "All Cars",
+    link: "/all",
+    icon: CarIcon,
+  },
+  {
+    label: "Sedans",
+    link: "/sedans",
+    icon: CarIcon,
+  },
+  {
+    label: "SUVs",
+    link: "/suvs",
+    icon: TruckIcon,
+  },
+  {
+    label: "Luxury Cars",
+    link: "/luxury",
+    icon: CarIcon,
+  },
+  {
+    label: "Sports Cars",
+    link: "/sports",
+    icon: CarIcon,
+  },
+  {
+    label: "Pickup Trucks",
+    link: "/pickups",
+    icon: TruckIcon,
+  },
+  {
+    label: "Vans & Minibuses",
+    link: "/vans",
+    icon: BusIcon,
+  },
+  {
+    label: "Motorbikes",
+    link: "/motorbikes",
+    icon: BikeIcon,
+  },
+  {
+    label: "Airport Transfers",
+    link: "/airport-transfers",
+    icon: PlaneIcon,
+  },
+  {
+    label: "Chauffeur Services",
+    link: "/chauffeur",
+    icon: CarIcon,
+  },
+];
+
+export const carsList: Tcar[] = [
+  {
+    title: "Land Cruiser",
+    slug: "land-cruiser",
+    imageWhite: "/a.png",
+    imageBlack: "/car-black.jpg",
+    category: "SUV",
+    price: {
+      inRwf: "80,000",
+      inUsd: "80",
+    },
+  },
+  {
+    title: "Land Cruiser",
+    slug: "land-cruisera",
+    imageWhite: "/b.jpg",
+    imageBlack: "/car-black.jpg",
+    category: "SUV",
+    price: {
+      inRwf: "80,000",
+      inUsd: "80",
+    },
+  },
+  {
+    title: "Land Cruiser",
+    slug: "land-cruiserb",
+    imageWhite: "/c.jpg",
+    imageBlack: "/car-black.jpg",
+    category: "SUV",
+    price: {
+      inRwf: "80,000",
+      inUsd: "80",
+    },
+  },
+  {
+    title: "Land Cruiser",
+    slug: "land-cruiserc",
+    imageWhite: "/d.jpg",
+    imageBlack: "/car-black.jpg",
+    category: "SUV",
+    price: {
+      inRwf: "80,000",
+      inUsd: "80",
+    },
+  },
 ];
