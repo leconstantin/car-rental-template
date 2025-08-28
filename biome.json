@@ -23,6 +23,9 @@
       },
       "style": {
         "noMagicNumbers": "off"
+      },
+      "performance": {
+        "noNamespaceImport": "warn"
       }
     },
     "domains": {

@@ -78,7 +78,7 @@ export function CommandMenu({ ...props }: DialogProps) {
       >
         <Search className="size-4" />
         <TextShimmer className="hidden lg:inline-flex" duration={1}>
-          Search an article...
+          Search a car...
         </TextShimmer>
         <TextShimmer className="inline-flex lg:hidden" duration={1}>
           Search...
@@ -89,13 +89,14 @@ export function CommandMenu({ ...props }: DialogProps) {
         </kbd>
       </Button>
       <CommandDialog
-        className="rounded-xl border-none bg-clip-padding p-2 shadow-2xl ring-4 ring-neutral-200/80 dark:bg-neutral-900 dark:ring-neutral-800"
+        className="rounded-xl border-none ring-1 ring-muted lg:min-w-2xl dark:bg-transparent"
+        commandClassName=" dark:bg-background/20 dark:backdrop-blur-md dark:supports-backdrop-blur:bg-background/90"
         onOpenChange={setOpen}
         open={open}
       >
         <CommandInput placeholder={placeholders[placeholderIndex]} />
 
-        <CommandList>
+        <CommandList className="max-h-[65vh] dark:bg-transparent">
           <CommandEmpty>No results found.</CommandEmpty>
           {/* pages */}
           <CommandGroup heading="Pages">
