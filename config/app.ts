@@ -66,8 +66,8 @@ export const navItems: TNavItem[] = [
     icon: UsersIcon,
   },
   {
-    href: "/gallery",
-    label: "Gallery",
+    href: "/book",
+    label: "Book",
     icon: ImageIcon,
   },
   {
@@ -86,8 +86,8 @@ export const navItems: TNavItem[] = [
     icon: MegaphoneIcon,
   },
   {
-    href: "/#stock",
-    label: "Stock",
+    href: "/contact",
+    label: "Contact Us",
     icon: CoinsIcon,
   },
 ];

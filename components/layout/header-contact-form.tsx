@@ -60,7 +60,7 @@ export default function HeaderContactForm() {
     <Popover>
       <PopoverTrigger asChild>
         <Button className="cursor-pointer px-4" size="sm" variant="ghost">
-          Contact
+          Feedback
         </Button>
       </PopoverTrigger>
       <PopoverContent
