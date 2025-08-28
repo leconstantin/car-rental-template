@@ -1,12 +1,13 @@
+import type { Car } from 'content-collections';
 import { BoxesIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { GlowingEffect } from '@/components/ui/glowing-effect';
-import type { Tcar } from '@/types';
 
-export default function CarCard({ car }: { car: Tcar }) {
-  const { title, slug, imageWhite, imageBlack, price, category } = car;
+export default function CarCard({ car }: { car: Car }) {
+  const { title, slug, coverImageWhite, coverImageBlack, price, category } =
+    car;
   return (
     <Link
       className="relative flex h-full cursor-pointer flex-col gap-4 rounded-sm bg-background md:p-2"
@@ -28,14 +29,14 @@ export default function CarCard({ car }: { car: Tcar }) {
             className="rounded-sm object-cover transition-transform duration-300 hover:scale-105 dark:hidden"
             fill
             priority
-            src={imageWhite || ''}
+            src={coverImageWhite || ''}
           />
           <Image
             alt={`Featured image for article: ${title}`}
             className="hidden rounded-sm object-cover transition-transform duration-300 hover:scale-105 dark:block"
             fill
             priority
-            src={imageBlack || ''}
+            src={coverImageBlack || ''}
           />
         </AspectRatio>
       </div>
