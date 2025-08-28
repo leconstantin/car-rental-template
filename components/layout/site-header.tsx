@@ -13,7 +13,7 @@ type SiteHeaderProps = {
 };
 export function SiteHeader({ isBlog = false }: SiteHeaderProps) {
   return (
-    <header className="sticky top-0 z-50 w-full bg-background/40 backdrop-blur-lg supports-backdrop-blur:bg-background/90">
+    <header className="sticky top-0 z-50 w-full bg-background/40 backdrop-blur-lg supports-backdrop-blur:bg-background/90 dark:bg-black">
       <div className="container-wrapper sm:px-6 lg:px-0">
         <div className="container flex h-14 items-center gap-2 md:gap-4">
           <MobileNav isBlog={isBlog} />
