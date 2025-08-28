@@ -9,9 +9,9 @@ import carBlack from '@/public/car-black.jpg';
 export default function HeroHome() {
   return (
     <PageContainer>
-      <div className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden px-2">
+      <div className="relative flex min-h-[calc(100vh-100px)] w-full flex-col items-center justify-center overflow-hidden px-2">
         <div className="w-full lg:flex lg:items-center lg:gap-12">
-          <div className="relative z-10 mx-auto max-w-xl text-center lg:ml-0 lg:w-1/2 lg:text-left">
+          <div className="relative z-10 mx-auto flex max-w-xl flex-col gap-10 text-center lg:ml-0 lg:w-1/2 lg:text-left">
             <Link
               className="mx-auto flex w-fit items-center gap-2 rounded-(--radius) border p-1 pr-3 lg:ml-0"
               href="/"
@@ -25,19 +25,25 @@ export default function HeroHome() {
               <ArrowRight className="size-4" />
             </Link>
 
-            <h1 className="mt-10 text-balance font-bold text-4xl md:text-5xl xl:text-5xl">
+            <h1 className="text-balance font-bold text-4xl md:text-5xl xl:text-5xl">
               Production Ready Digital Marketing blocks
             </h1>
-            <p className="mt-8">
+            <p className="">
               Error totam sit illum. Voluptas doloribus asperiores quaerat
               aperiam. Quidem harum omnis beatae ipsum soluta!
             </p>
 
-            <div className="mt-10 flex flex-col gap-4 lg:flex-row">
-              <Button size={'lg'}>Book now</Button>
-              <Button size="lg" variant={'secondary'}>
-                See more
-              </Button>
+            <div className="flex flex-col gap-5">
+              <div className="flex flex-col gap-4 lg:flex-row">
+                <Button size={'lg'}>Book now</Button>
+                <Button size="lg" variant={'secondary'}>
+                  See more
+                </Button>
+              </div>
+
+              <p className="text-muted-foreground">
+                Start with free test ride today
+              </p>
             </div>
           </div>
         </div>
